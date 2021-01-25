@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1061797229124",
+    "project_id": "fir-2-cb136",
+    "storage_bucket": "fir-2-cb136.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061797229124:android:6e2c948b0cb58269604211",
+        "android_client_info": {
+          "package_name": "com.suro.oop2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061797229124-cng4n348hq25aegro23oe2aus62vflib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4c2QzNWTeCK2O_8ms4Cp_oGMDIUtwQmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061797229124-cng4n348hq25aegro23oe2aus62vflib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
