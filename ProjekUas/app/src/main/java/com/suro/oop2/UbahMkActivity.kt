@@ -41,14 +41,14 @@ class UbahMkActivity : AppCompatActivity() {
             val body = edit_text_operator.text.toString()
 
             if (title.isEmpty() && body.isEmpty()){
-                Toast.makeText(applicationContext, "Bimbingan tidak boleh ksosong", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Matkul tidak boleh ksosong", Toast.LENGTH_SHORT).show()
             }
             else{
                 if (isUpdate){
-                    saveBimbingan(Mk(id = mk.id, title = title, body = body))
+                    saveMk(Mk(id = mk.id, title = title, body = body))
                 }
                 else{
-                    saveBimbingan(Mk(title = title, body = body))
+                    saveMk(Mk(title = title, body = body))
                 }
             }
 
@@ -56,29 +56,29 @@ class UbahMkActivity : AppCompatActivity() {
         }
 
         button_delete.setOnClickListener {
-            deleteBimbingan(mk)
+            deleteMk(mk)
             finish()
         }
 
     }
 
-    private fun saveBimbingan(bimbingan: Mk){
+    private fun saveMk(mk: Mk){
 
-        if (dao.getById(bimbingan.id).isEmpty()){
+        if (dao.getById(mk.id).isEmpty()){
 
-            dao.insert(bimbingan)
+            dao.insert(mk)
         }
         else{
 
-            dao.update(bimbingan)
+            dao.update(mk)
         }
 
         Toast.makeText(applicationContext, "Berhasil di simpan", Toast.LENGTH_SHORT).show()
 
     }
 
-    private fun deleteBimbingan(bimbingan: Mk){
-        dao.delete(bimbingan)
+    private fun deleteMk(mk: Mk){
+        dao.delete(mk)
         Toast.makeText(applicationContext, "berhasil di hapus", Toast.LENGTH_SHORT).show()
     }
 }

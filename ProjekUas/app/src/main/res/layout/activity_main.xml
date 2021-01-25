@@ -3,9 +3,10 @@
 <layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".MainActivity">
 
         <TextView
@@ -13,12 +14,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="Mata Kuliah dan Tugas"
+            android:text="Tugas Dan Matkul"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
 
         <LinearLayout
@@ -35,28 +35,24 @@
             app:layout_constraintTop_toBottomOf="@+id/textView">
 
             <Button
-                android:id="@+id/tugasBtn"
+                android:id="@+id/Tugasbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:paddingTop="50dp"
-                android:paddingBottom="50dp"
                 android:text="Tugas"
-                app:backgroundTint="@color/teal_200" />
+                app:backgroundTint="@color/purple_200"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="361dp" />
 
             <Button
-                android:id="@+id/MkBtn"
+                android:id="@+id/Mkbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:paddingTop="50dp"
-                android:paddingBottom="50dp"
-                android:text="Bimbingan"
-                app:backgroundTint="@color/teal_200" />
+                android:text="MATKUL"
+                app:backgroundTint="@color/purple_200"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="289dp" />
+
+
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

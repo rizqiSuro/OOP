@@ -10,7 +10,7 @@ import com.suro.oop2.model.Mk
 import kotlinx.android.synthetic.main.activity_mk.floatingActionButton
 import kotlinx.android.synthetic.main.activity_mk.recycler_view_main
 import kotlinx.android.synthetic.main.activity_mk.text_view_note_empty
-import kotlinx.android.synthetic.main.activity_tugas.*
+import kotlinx.android.synthetic.main.activity_mk.*
 
 
 class MkActivity : AppCompatActivity() {
@@ -18,14 +18,14 @@ class MkActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mk)
 
-        getMkData()
+        getMksData()
 
         floatingActionButton.setOnClickListener {
             startActivity(Intent(this, UbahMkActivity::class.java))
         }
     }
 
-    private fun getMkData(){
+    private fun getMksData(){
         val database = MkRoomDB.getDatabase(applicationContext)
         val dao = database.getMkDao()
         val listItems = arrayListOf<Mk>()
@@ -55,6 +55,6 @@ class MkActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        getMkData()
+        getMksData()
     }
 }

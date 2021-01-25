@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.suro.oop2.db.TugasDao
-import com.suro.oop2.db.TugasRomDB
+import com.suro.oop2.db.TugasRoomDB
 import com.suro.oop2.model.Tugas
 import kotlinx.android.synthetic.main.activity_ubah_tugas.*
 
@@ -15,7 +15,7 @@ class UbahTugasActivity : AppCompatActivity() {
     val UBAH_TUGAS_EXTRA = "ubah_tugas_extra"
     private lateinit var tugas: Tugas
     private var isUpdate = false
-    private lateinit var database: TugasRomDB
+    private lateinit var database: TugasRoomDB
     private lateinit var dao: TugasDao
 
 
@@ -23,7 +23,7 @@ class UbahTugasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ubah_tugas)
 
-        database = TugasRomDB.getDatabase(applicationContext)
+        database = TugasRoomDB.getDatabase(applicationContext)
         dao = database.getTugasDao()
 
         if (intent.getParcelableExtra<Tugas>(UBAH_TUGAS_EXTRA) != null){

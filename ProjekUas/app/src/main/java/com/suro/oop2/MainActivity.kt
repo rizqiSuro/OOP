@@ -11,11 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        binding.tugastBtn.setOnClickListener {
+        binding.Tugasbtn.setOnClickListener {
             val intent = Intent(this@MainActivity, TugasActivity::class.java)
             startActivity(intent)
         }
-        binding.bimbinganBtn.setOnClickListener {
+        binding.Mkbtn.setOnClickListener {
             val intent = Intent(this@MainActivity, MkActivity::class.java)
             startActivity(intent)
         }

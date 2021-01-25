@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OOP2">
-<!--        <activity android:name=".UbahBimbinganActivity"></activity>-->
+        <activity android:name=".UbahMkActivity"></activity>
         <activity android:name=".UbahTugasActivity" />
-<!--        <activity android:name=".BimbinganActivity" />-->
+        <activity android:name=".MkActivity" />
         <activity android:name=".TugasActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
